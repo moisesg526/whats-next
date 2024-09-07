@@ -1,3 +1,4 @@
+import tabs from "./tabs";
 import "./style.css";
 
 function content() {
@@ -7,7 +8,8 @@ function content() {
 
   let h1 = document.createElement("h1");
   h1.textContent = "Whats Next!";
-  content.appendChild(h1);
+  header.appendChild(h1);
+  content.appendChild(tabs());
 }
 
 content();
