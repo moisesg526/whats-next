@@ -31,3 +31,20 @@ nav button {
   border-radius: 10px;
   cursor: pointer;
 }
+
+form {
+  background-color: #924b4b;
+  padding: 2rem 4rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+}

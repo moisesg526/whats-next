@@ -1,4 +1,5 @@
 import tabs from "./tabs";
+import add from "./add";
 import "./style.css";
 
 function content() {
@@ -10,6 +11,9 @@ function content() {
   h1.textContent = "Whats Next!";
   header.appendChild(h1);
   content.appendChild(tabs());
+  content.appendChild(add());
+
+  return content;
 }
 
 content();
