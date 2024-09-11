@@ -1,10 +1,8 @@
-import "./style.css";
 export default function add() {
   let display = document.createElement("div");
   display.setAttribute("id", "add-project");
 
   let form = document.createElement("form");
-  form.setAttribute("method", "post");
 
   let create = document.createElement("label");
   create.textContent = "Create a new project";
@@ -19,9 +17,13 @@ export default function add() {
   details.setAttribute("name", "details");
   details.setAttribute("placeholder", "Project Description ...");
 
+  let addBtn = document.createElement("button");
+  addBtn.textContent = "Create";
+
   form.appendChild(create);
   form.appendChild(title);
   form.appendChild(details);
+  form.appendChild(addBtn);
 
   display.appendChild(form);
 

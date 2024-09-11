@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+.contentBody {
+  background-color: #7dc0c2;
+  display: grid;
+  justify-content: center;
+}
+
 header {
   background-color: #000;
   color: #fff;
@@ -23,7 +29,7 @@ nav {
   padding: 2rem;
 }
 
-nav button {
+button {
   background-color: #000;
   color: #fff;
   font-size: 1rem;
@@ -41,6 +47,7 @@ form {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  display: none;
 }
 
 input {
