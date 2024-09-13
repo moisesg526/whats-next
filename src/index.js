@@ -1,5 +1,5 @@
 import tabs from "./tabs";
-import add from "./add";
+import add from "./form";
 import "./style.css";
 
 function content() {

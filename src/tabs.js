@@ -1,4 +1,4 @@
-import add from "./add"
+import addBtn from "./add";
 
 export default function tabs() {
   let nav = document.createElement("nav");
@@ -7,13 +7,9 @@ export default function tabs() {
   add.setAttribute("id", "add");
   add.textContent = "Add Project";
   nav.appendChild(add);
-  add.addEventListener("click", function () {
-    if (add.style.display === "none") {
-      add.style.display = "block";
-    } else {
-      add.style.display = "none";
-    }
-  });
+  add.onclick = function () {
+    addBtn();
+  };
 
   let projects = document.createElement("button");
   projects.setAttribute("id", "projects");
