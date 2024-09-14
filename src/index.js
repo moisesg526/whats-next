@@ -1,5 +1,4 @@
 import tabs from "./tabs";
-import add from "./form";
 import "./style.css";
 
 function content() {
@@ -15,8 +14,8 @@ function content() {
   let contentBody = document.createElement("div");
   contentBody.setAttribute("class", "contentBody");
   content.appendChild(contentBody);
+
   contentBody.appendChild(tabs());
-  contentBody.appendChild(add());
 
   return content;
 }

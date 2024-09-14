@@ -1,15 +1,8 @@
-import addBtn from "./add";
+import form from "./form";
 
 export default function tabs() {
   let nav = document.createElement("nav");
-
-  let add = document.createElement("button");
-  add.setAttribute("id", "add");
-  add.textContent = "Add Project";
-  nav.appendChild(add);
-  add.onclick = function () {
-    addBtn();
-  };
+  nav.appendChild(form());
 
   let projects = document.createElement("button");
   projects.setAttribute("id", "projects");

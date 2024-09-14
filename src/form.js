@@ -2,6 +2,10 @@ export default function add() {
   let display = document.createElement("div");
   display.setAttribute("id", "add-project");
 
+  let toggleBtn = document.createElement("button");
+  toggleBtn.textContent = "Add New Project";
+  display.appendChild(toggleBtn);
+
   let form = document.createElement("form");
 
   let create = document.createElement("label");
@@ -24,7 +28,15 @@ export default function add() {
   form.appendChild(title);
   form.appendChild(details);
   form.appendChild(addBtn);
-
   display.appendChild(form);
+
+  toggleBtn.addEventListener("click", () => {
+    if (form.style.display === "none") {
+      form.style.display = "flex";
+    } else {
+      form.style.display = "none";
+    }
+  });
+
   return display;
 }

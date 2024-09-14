@@ -42,7 +42,7 @@ form {
   background-color: #924b4b;
   padding: 2rem 4rem;
   width: 20rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
