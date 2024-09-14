@@ -7,6 +7,7 @@ export default function add() {
   display.appendChild(toggleBtn);
 
   let form = document.createElement("form");
+  form.style.display = "none";
 
   let create = document.createElement("label");
   create.textContent = "Create a new project";
@@ -31,7 +32,9 @@ export default function add() {
   display.appendChild(form);
 
   toggleBtn.addEventListener("click", () => {
-    if (form.style.display === "none") {
+    const formDisplay = window.getComputedStyle(form).display;
+
+    if (formDisplay === "none") {
       form.style.display = "flex";
     } else {
       form.style.display = "none";
