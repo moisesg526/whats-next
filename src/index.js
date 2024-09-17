@@ -1,5 +1,6 @@
-import tabs from "./tabs";
+// import tabs from "./tabs";
 import "./style.css";
+import add from "./add";
 
 function content() {
   let content = document.querySelector(".content");
@@ -15,7 +16,7 @@ function content() {
   contentBody.setAttribute("class", "contentBody");
   content.appendChild(contentBody);
 
-  contentBody.appendChild(tabs());
+  contentBody.appendChild(add());
 
   return content;
 }
