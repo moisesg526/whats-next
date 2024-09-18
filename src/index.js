@@ -1,4 +1,3 @@
-// import tabs from "./tabs";
 import "./style.css";
 import add from "./add";
 
