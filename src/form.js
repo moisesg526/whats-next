@@ -14,18 +14,18 @@ export function createForm() {
   details.setAttribute("name", "details");
   details.setAttribute("placeholder", "Project Description ...");
 
-  const radioGroup = document.createElement("div");
-  let priority = ["High", "Low"];
-  priority.forEach((option) => {
-    const label = document.createElement("label");
-    const radio = document.createElement("input");
-    radio.type = "radio";
-    radio.name = "options";
-    radio.value = option;
-    label.appendChild(radio);
-    label.appendChild(document.createTextNode(option));
-    radioGroup.appendChild(label);
-  });
+  // const radioGroup = document.createElement("div");
+  // let priority = ["High", "Low"];
+  // priority.forEach((option) => {
+  //   const label = document.createElement("label");
+  //   const radio = document.createElement("input");
+  //   radio.type = "radio";
+  //   radio.name = "options";
+  //   radio.value = option;
+  //   label.appendChild(radio);
+  //   label.appendChild(document.createTextNode(option));
+  //   radioGroup.appendChild(label);
+  // });
 
   let addBtn = document.createElement("button");
   addBtn.textContent = "Create";
@@ -33,7 +33,7 @@ export function createForm() {
   form.appendChild(create);
   form.appendChild(title);
   form.appendChild(details);
-  form.appendChild(radioGroup);
+  // form.appendChild(radioGroup);
   form.appendChild(addBtn);
 
   return form;

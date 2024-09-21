@@ -1,6 +1,7 @@
 import { createForm } from "./form";
 import { toggleFormVisibility } from "./toggle";
 import { handleFormSubmit } from "./submit";
+import { taskForm } from "./taskForm";
 
 export default function add() {
   let display = document.createElement("div");
@@ -22,14 +23,26 @@ export default function add() {
   form.style.display = "none";
   display.appendChild(form);
 
+  let taskFormElement = taskForm();
+  taskFormElement.style.display = "none";
+  display.appendChild(taskFormElement);
+
   // Event to toggle form visibility
   addBtn.addEventListener("click", () => {
     toggleFormVisibility(form); // Import the toggle function
   });
 
+  tasks.addEventListener("click", () => {
+    toggleFormVisibility(taskFormElement);
+  });
+
   // Handle form submission and creating a project card
   form.addEventListener("submit", (e) => {
     handleFormSubmit(e, form, display); // Import the submit handling function
+  });
+
+  taskFormElement.addEventListener("submit", (e) => {
+    handleFormSubmit(e, taskFormElement, display);
   });
 
   return display;

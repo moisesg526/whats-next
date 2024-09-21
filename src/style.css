@@ -76,5 +76,13 @@ label {
   position: absolute;
   top: 0.5rem;
   right: 1.5rem;
+}
 
+.taskForm {
+  background-color: #bcd4c5;
+}
+
+.taskForm label {
+  background-color: #bcd4c5;
+  padding: 0 1rem;
 }
