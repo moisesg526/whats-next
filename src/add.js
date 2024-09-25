@@ -2,6 +2,7 @@ import { createForm } from "./form";
 import { toggleFormVisibility } from "./toggle";
 import { handleFormSubmit } from "./submit";
 import { taskForm } from "./taskForm";
+import { taskSubmit } from "./taskSubmit";
 
 export default function add() {
   let display = document.createElement("div");
@@ -42,7 +43,7 @@ export default function add() {
   });
 
   taskFormElement.addEventListener("submit", (e) => {
-    handleFormSubmit(e, taskFormElement, display);
+    taskSubmit(e, taskFormElement, display);
   });
 
   return display;
